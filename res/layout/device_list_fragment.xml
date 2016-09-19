@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="linh.chatbluetooth.HomeActivity">
+    <ListView
+        android:layout_width="match_parent" android:id="@+id/list_device"
+        android:layout_height="match_parent" android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_above="@+id/line" />
+    <View
+        android:layout_width="match_parent" android:background="#E0E0E0"
+        android:layout_height="1dp" android:id="@+id/line"
+        android:layout_above="@+id/linearLayout"
+        android:paddingLeft="8dp" android:paddingRight="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="0dp" android:id="@+id/btnDiscovery"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:background="@android:color/white" android:textColor="#1B5E20"
+            style="?android:attr/borderlessButtonStyle"/>
+        <View
+            android:layout_width="1dp" android:background="#E0E0E0"
+            android:layout_height="25dp" android:layout_gravity="center_vertical"/>
+        <Button
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="@string/visible"
+            android:textColor="#1B5E20" style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnDiscoverable" />
+    </LinearLayout>
+</RelativeLayout>

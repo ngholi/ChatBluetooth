@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BlueTooth Chat</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="write_your_message"><i>Gõ tin nhắn ...</i></string>
+    <string name="connect_request">Yêu cầu kết nối</string>
+    <string name="connect_request_question"> muốn kết nối với bạn. Bạn có đồng ý không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="recent">Gần đây</string>
+    <string name="waiting_connect">Chờ kết nối</string>
+    <string name="connecting">Đang kết nối …</string>
+    <string name="friend_connect_question">Có 1 người bạn muốn chat với bạn</string>
+    <string name="open_to_chat">Mở để chat với bạn bè</string>
+    <string name="your_app_running">Ứng dụng đang chạy nền</string>
+    <string name="close_connect_question">Kết nối hiện tại cần được đóng trước. Bạn có muốn đóng kết nối</string>
+    <string name="available">Sẵn có</string>
+    <string name="unable_to_connect">Không thể kết nối</string>
+    <string name="waiting_for_accept">Đang chờ chấp thuận …</string>
+    <string name="visible">Visible</string>
+</resources>

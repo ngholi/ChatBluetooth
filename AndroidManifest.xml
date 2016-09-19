@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="linh.chatbluetooth">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chat"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="action.i.define.open.chat"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".ChatService">
+            <intent-filter>
+                <action android:name="action.i.define.start"/>
+                <action android:name="action.i.define.stop"/>
+                <action android:name="action.i.define.connect"/>
+                <action android:name="action.i.define.send.message"/>
+                <action android:name="action.i.define.refuse.connect"/>
+                <action android:name="action.i.define.send.accept"/>
+                <action android:name="action.i.define.device.info"/>
+                <action android:name="action.i.define.disconnect"/>
+                <action android:name="action.i.define.opened.chat"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

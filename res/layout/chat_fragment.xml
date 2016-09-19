@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent" android:id="@+id/chat" android:animateLayoutChanges="true"
+        android:layout_height="0dp" android:layout_weight="1" android:divider="@null"
+        android:dividerHeight="0dp" android:stackFromBottom="true"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listIcon"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:id="@+id/panel"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:id="@+id/chat_content"
+            android:maxHeight="70dp" android:hint="@string/write_your_message"
+            android:layout_alignParentLeft="true" android:textColorHint="@android:color/darker_gray"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" android:inputType="textShortMessage"
+            android:layout_toStartOf="@+id/iconShow"
+            android:layout_toLeftOf="@+id/iconShow" />
+        <ImageButton
+            android:layout_width="50dp" android:background="@android:color/transparent"
+            android:layout_height="wrap_content" android:id="@+id/send"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/happy" android:padding="12dp"
+            android:id="@+id/iconShow"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/send"
+            android:layout_toStartOf="@+id/send"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>
